@@ -14,7 +14,7 @@ A `Dockerfile` is a configuration file that contains instructions for building a
 
 ```Dockerfile
 # Example of a comment
-FROM ubuntu
+FROM ubuntu:22.10
 
 RUN apt-get update
 RUN apt-get install curl -y
@@ -35,7 +35,7 @@ cd htop-container
 * Create below file using `vi Dockerfile`
 
 ```Dockerfile
-FROM ubuntu
+FROM ubuntu:22.10
 LABEL MAINTAINER "user@domain.com"
 
 RUN apt-get update && apt-get install -y \
